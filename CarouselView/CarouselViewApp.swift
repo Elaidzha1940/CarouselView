@@ -1,9 +1,11 @@
+//  /*
 //
-//  CarouselViewApp.swift
-//  CarouselView
+//  Project: CarouselView
+//  File: CarouselViewApp.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 25.10.2023
 //
-//  Created by Elaidzha Shchukin on 25.10.2023.
-//
+//  */
 
 import SwiftUI
 

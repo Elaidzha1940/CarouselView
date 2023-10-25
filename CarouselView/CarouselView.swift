@@ -10,10 +10,18 @@
 import SwiftUI
 
 struct CarouselView: View {
+    @State private var snappedItem = 0.0
+    @State private var dragging = 1.0
+    @State private var avtiveIndex: Int = 0
+    
+    var views: [CarouselViewHelper]
+    
     var body: some View {
         
-        VStack {
-            
+        ZStack {
+            ForEach(views) { view in
+                
+            }
         }
     }
 }

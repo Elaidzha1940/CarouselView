@@ -12,6 +12,7 @@
 		E48BCA842AE9A5FA005F1AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48BCA832AE9A5FA005F1AE0 /* Assets.xcassets */; };
 		E48BCA872AE9A5FA005F1AE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48BCA862AE9A5FA005F1AE0 /* Preview Assets.xcassets */; };
 		E48BCA8E2AE9C623005F1AE0 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48BCA8D2AE9C622005F1AE0 /* CarouselView.swift */; };
+		E48BCA902AE9C757005F1AE0 /* CarouselViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48BCA8F2AE9C757005F1AE0 /* CarouselViewHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E48BCA832AE9A5FA005F1AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48BCA862AE9A5FA005F1AE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E48BCA8D2AE9C622005F1AE0 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		E48BCA8F2AE9C757005F1AE0 /* CarouselViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				E48BCA832AE9A5FA005F1AE0 /* Assets.xcassets */,
 				E48BCA852AE9A5FA005F1AE0 /* Preview Content */,
 				E48BCA8D2AE9C622005F1AE0 /* CarouselView.swift */,
+				E48BCA8F2AE9C757005F1AE0 /* CarouselViewHelper.swift */,
 			);
 			path = CarouselView;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E48BCA902AE9C757005F1AE0 /* CarouselViewHelper.swift in Sources */,
 				E48BCA822AE9A5F9005F1AE0 /* ContentView.swift in Sources */,
 				E48BCA8E2AE9C623005F1AE0 /* CarouselView.swift in Sources */,
 				E48BCA802AE9A5F9005F1AE0 /* CarouselViewApp.swift in Sources */,

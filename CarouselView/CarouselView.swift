@@ -1,16 +1,20 @@
+//  /*
 //
-//  CarouselView.swift
-//  CarouselView
+//  Project: CarouselView
+//  File: CarouselView.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 25.10.2023
 //
-//  Created by Elaidzha Shchukin on 26.10.2023.
-//
+//  */
 
 import SwiftUI
 
 struct CarouselView: View {
     var body: some View {
         
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+        }
     }
 }
 

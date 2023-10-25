@@ -25,9 +25,22 @@ struct CarouselView : View {
                 view
                     .scaleEffect(1.0 - abs(distance(view.id)) * 0.2)
                     .opacity(1.0 - abs(distance(view.id)) * 0.3)
-                    .offset(x: getOffset(), y: 0)
+                    .offset(x: getOffset(view.id), y: 0)
+                    .zIndex(1.0 - abs(distance(view.id)) * 0.1)
             }
         }
+        .gesture(
+            DragGesture()
+                .onChanged({ value in
+                    draggingItem = snappedItem + value.translation.width / 100
+                })
+                .onEnded({ value in
+                    withAnimation {
+                        draggingItem = snappedItem + value.predictedEndTranslation.width / 100
+                        draggingItem = round(draggingItem).remainder(dividingBy: Double(views.count))
+                    }
+                })
+        )
     }
     
     func distance(_ item: Int) -> Double {

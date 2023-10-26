@@ -43,7 +43,7 @@ struct CarouselView : View {
                         if self.activeIndex > views.count || Int(draggingItem) >= 0{
                             self.activeIndex = Int(draggingItem)
                         }
-                            
+                        
                     }
                 })
         )
@@ -64,7 +64,7 @@ struct CarouselView : View {
 }
 
 var placeholderCarouselViewHelper: [CarouselViewHelper] = [
-
+    
     CarouselViewHelper(id: 1, content: {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
@@ -73,29 +73,29 @@ var placeholderCarouselViewHelper: [CarouselViewHelper] = [
             Text("1")
                 .padding()
         }
-        .frame(width: 200, height: 400)
+        .frame(width: 300, height: 500)
     }),
     
     CarouselViewHelper(id: 1, content: {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.black.opacity(0.5))
+                .fill(Color.red)
             
             Text("2")
                 .padding()
         }
-        .frame(width: 200, height: 400)
+        .frame(width: 300, height: 500)
     }),
     
     CarouselViewHelper(id: 3, content: {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.black.opacity(0.5))
+                .fill(Color.red)
             
             Text("3")
                 .padding()
         }
-        .frame(width: 200, height: 400)
+        .frame(width: 300, height: 500)
     })
 ]
 

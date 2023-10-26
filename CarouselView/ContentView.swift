@@ -17,7 +17,7 @@ struct ContentView: View {
         }
         .ignoresSafeArea()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black.opacity(0.7))
+        .background(Color.black.opacity(0.8))
     }
     
     func getHelperView() -> [CarouselViewHelper] {
@@ -31,14 +31,13 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fill)
                         .mask {
                             RoundedRectangle(cornerRadius: 20)
-                                .frame(width: 300, height: 400)
+                                .frame(width: 300, height: 500)
                         }
                 }
-                .frame(width: 250, height: 400)
+                .frame(width: 300, height: 500)
                 .shadow(radius: 15)
             }))
         }
-        
         return tempViews
     }
 }

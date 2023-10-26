@@ -67,13 +67,35 @@ var placeholderCarouselViewHelper: [CarouselViewHelper] = [
 
     CarouselViewHelper(id: 1, content: {
         ZStack {
-            RoundedRectangle(cornerRadius: 25.0, style: .continuous)
-                .fill(Color.white)
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.black.opacity(0.5))
             
             Text("1")
-                .padding()
+                //.padding()
         }
-        .frame(width: 200, height: 450)
+        .frame(width: 200, height: 400)
+    }),
+    
+    CarouselViewHelper(id: 1, content: {
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.black.opacity(0.5))
+            
+            Text("2")
+                //.padding()
+        }
+        .frame(width: 200, height: 400)
+    }),
+    
+    CarouselViewHelper(id: 3, content: {
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.black.opacity(0.5))
+            
+            Text("3")
+                //.padding()
+        }
+        .frame(width: 200, height: 400)
     })
 ]
 

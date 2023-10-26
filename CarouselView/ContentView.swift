@@ -11,13 +11,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+        // content
         ZStack {
             CarouselView(views: getHelperView())
         }
-        .ignoresSafeArea()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black.opacity(0.8))
+        .background(Color("BG"))
     }
     
     func getHelperView() -> [CarouselViewHelper] {
@@ -30,12 +29,12 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .mask {
-                            RoundedRectangle(cornerRadius: 20)
+                            RoundedRectangle(cornerRadius: 40)
                                 .frame(width: 300, height: 500)
                         }
                 }
                 .frame(width: 300, height: 500)
-                .shadow(radius: 15)
+                .shadow(radius: 20)
             }))
         }
         return tempViews

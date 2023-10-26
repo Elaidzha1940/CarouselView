@@ -14,7 +14,6 @@ struct CarouselViewApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .background(Color.black.opacity(0.8))
         }
     }
 }

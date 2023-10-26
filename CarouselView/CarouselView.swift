@@ -14,7 +14,7 @@ struct CarouselView : View {
     @State private var draggingItem = 1.0
     @State private var activeIndex: Int = 0
     
-    var views: [CarouselViewHelper]
+    var views: [CarouselViewHelper] = placeholderCarouselViewHelper
     
     var xDistance: Int = 150
     

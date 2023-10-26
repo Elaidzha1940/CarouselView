@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct CarouselViewHelper: View {
+struct CarouselViewHelper: View, Identifiable {
     var id: Int
     @ViewBuilder var content: any View
     

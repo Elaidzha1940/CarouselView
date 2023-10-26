@@ -62,3 +62,18 @@ struct CarouselView : View {
 #Preview {
     CarouselView()
 }
+
+var placeholderCarouselViewHelper: [CarouselViewHelper] = [
+
+    CarouselViewHelper(id: 1, content: {
+        ZStack {
+            RoundedRectangle(cornerRadius: 25.0, style: .continuous)
+                .fill(Color.white)
+            
+            Text("1")
+                .padding()
+        }
+        .frame(width: 200, height: 450)
+    })
+]
+

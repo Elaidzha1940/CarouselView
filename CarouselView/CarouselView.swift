@@ -68,10 +68,10 @@ var placeholderCarouselViewHelper: [CarouselViewHelper] = [
     CarouselViewHelper(id: 1, content: {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.black.opacity(0.5))
+                .fill(Color.red)
             
             Text("1")
-                //.padding()
+                .padding()
         }
         .frame(width: 200, height: 400)
     }),
@@ -82,7 +82,7 @@ var placeholderCarouselViewHelper: [CarouselViewHelper] = [
                 .fill(Color.black.opacity(0.5))
             
             Text("2")
-                //.padding()
+                .padding()
         }
         .frame(width: 200, height: 400)
     }),
@@ -93,7 +93,7 @@ var placeholderCarouselViewHelper: [CarouselViewHelper] = [
                 .fill(Color.black.opacity(0.5))
             
             Text("3")
-                //.padding()
+                .padding()
         }
         .frame(width: 200, height: 400)
     })

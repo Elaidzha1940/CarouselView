@@ -12,7 +12,7 @@ import SwiftUI
 struct CarouselView : View {
     @State private var snappedItem = 0.0
     @State private var draggingItem = 1.0
-    @State private var avtiveIndex: Int = 0
+    @State private var activeIndex: Int = 0
     
     var views: [CarouselViewHelper]
     
@@ -38,6 +38,12 @@ struct CarouselView : View {
                     withAnimation {
                         draggingItem = snappedItem + value.predictedEndTranslation.width / 100
                         draggingItem = round(draggingItem).remainder(dividingBy: Double(views.count))
+                        snappedItem = draggingItem
+                        self.activeIndex = views.count + Int(draggingItem)
+                        if self.activeIndex > views.count || Int(draggingItem) >= 0{
+                            self.activeIndex = Int(draggingItem)
+                        }
+                            
                     }
                 })
         )

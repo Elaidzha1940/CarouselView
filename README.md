@@ -1,3 +1,8 @@
 
+https://github.com/Elaidzha1940/CarouselView/assets/64445918/e7fd53a0-9339-4c85-9ea5-bdea223ea153
 
-https://github.com/Elaidzha1940/CarouselView/assets/64445918/67ce5cfa-4b5f-42c0-a9d6-e8365883519c
+
+
+
+
+
